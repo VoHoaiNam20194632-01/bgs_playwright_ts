@@ -1,0 +1,23 @@
+{
+  "name": "bgs_playwright_ts",
+  "version": "1.0.0",
+  "description": "Automation Project Playwright, TS",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VoHoaiNam20194632-01/bgs_playwright_ts.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VoHoaiNam20194632-01/bgs_playwright_ts/issues"
+  },
+  "homepage": "https://github.com/VoHoaiNam20194632-01/bgs_playwright_ts#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.9"
+  }
+}
