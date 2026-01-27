@@ -33,11 +33,13 @@ export class NewProductPage extends CommonPage {
             for (let i = 0; i < maxColorAdd - current; i++) {
                 let colorAddXpath = `//span[normalize-space()="${listTextColorBase[i]}"]`
                 this.page.locator(colorAddXpath).click();
+                this.page.waitForTimeout(500);
             }
         } else {
             for (let i = 0; i < listTextColorBase.length; i++) {
                 let colorAddXpath = `//span[normalize-space()="${listTextColorBase[i]}"]`
                 this.page.locator(colorAddXpath).click();
+                this.page.waitForTimeout(500);
             }
         }
         let buttonCloseDialogAddColorXpath = `//div[starts-with(text(), 'Add color')]//svg-icon`;

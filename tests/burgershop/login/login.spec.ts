@@ -1,11 +1,12 @@
 import { test, expect, Page } from "@playwright/test";
 import { invalidLogin } from "../../../data/login/login-data";
 import { LoginPage } from "../../../model/page/login-page";
+import { UI_ADMIN_LOGIN_URL } from "../../../model/utils/constants-utils";
 
 let loginPage: LoginPage
 test.beforeEach(async ({ page }) => {
     loginPage = new LoginPage(page);
-    await page.goto("https://admin-dev.burgershop.io/authentication/login");
+    await page.goto(UI_ADMIN_LOGIN_URL);
 })
 
 test("Verify admin login successful", async ({ page }) => {

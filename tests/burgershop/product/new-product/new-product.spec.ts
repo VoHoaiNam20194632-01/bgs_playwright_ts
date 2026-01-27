@@ -14,7 +14,6 @@ test.beforeEach(async ({ page }) => {
     homePage = new HomePage(page);
     allProductPage = new AllProductPage(page);
     newProductPage = new NewProductPage(page);
-    await page.goto("https://admin-dev.burgershop.io/authentication/login");
     await loginPage.adminLogin();
 })
 

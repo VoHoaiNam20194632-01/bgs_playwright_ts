@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Automation Project Playwright, TS",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test-dev": "npx playwright test tests/burgershop",
+    "test-product": "cross-env TEST_ENV=product npx playwright test tests/burgershop"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VoHoaiNam20194632-01/bgs_playwright_ts.git"
@@ -17,7 +20,13 @@
   },
   "homepage": "https://github.com/VoHoaiNam20194632-01/bgs_playwright_ts#readme",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.9"
+    "@playwright/test": "^1.58.0",
+    "@types/node": "^25.0.9",
+    "allure-commandline": "^2.36.0",
+    "allure-playwright": "^3.4.5"
+  },
+  "dependencies": {
+    "allure": "^3.0.1",
+    "dotenv": "^17.2.3"
   }
 }
